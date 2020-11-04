@@ -1,0 +1,18 @@
+query CountryList {
+  countries {
+    code
+    name
+    native
+    emoji
+  }
+}
+
+query ContinentList {
+  continents {
+    code
+    name
+    countries {
+      code
+    }
+  }
+}

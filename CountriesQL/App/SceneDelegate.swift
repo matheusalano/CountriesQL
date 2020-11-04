@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  CountriesQL
-//
-//  Created by Matheus Alano on 04/11/20.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

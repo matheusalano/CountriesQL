@@ -22,6 +22,7 @@
 		17DC5073255337AC00C4A31B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC5072255337AC00C4A31B /* AppRouter.swift */; };
 		17DC507B25533D1100C4A31B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC507A25533D1100C4A31B /* BaseCoordinator.swift */; };
 		17DC508025533FD100C4A31B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC507F25533FD100C4A31B /* AppCoordinator.swift */; };
+		17DC508D25534B9C00C4A31B /* ContinentListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC508C25534B9C00C4A31B /* ContinentListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		171FAAB925525BDE0015C67F /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		171FAABA25525C180015C67F /* CountryList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CountryList.graphql; sourceTree = "<group>"; };
+		171FAABA25525C180015C67F /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		171FAABE25525C740015C67F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		171FAAC725525D9C0015C67F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1758AAEC255256260055280E /* CountriesQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +62,7 @@
 		17DC5072255337AC00C4A31B /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		17DC507A25533D1100C4A31B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		17DC507F25533FD100C4A31B /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		17DC508C25534B9C00C4A31B /* ContinentListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		171FAAB825525BCF0015C67F /* GraphQL queries */ = {
+		171FAAB825525BCF0015C67F /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
 				171FAAB925525BDE0015C67F /* schema.json */,
-				171FAABA25525C180015C67F /* CountryList.graphql */,
+				171FAABA25525C180015C67F /* Queries.graphql */,
 			);
-			name = "GraphQL queries";
+			name = GraphQL;
 			sourceTree = "<group>";
 		};
 		171FAAC625525D840015C67F /* Networking */ = {
@@ -135,8 +137,9 @@
 			children = (
 				17DC506225532EF500C4A31B /* App */,
 				17DC5068255336C600C4A31B /* General */,
-				171FAAB825525BCF0015C67F /* GraphQL queries */,
+				171FAAB825525BCF0015C67F /* GraphQL */,
 				171FAAC625525D840015C67F /* Networking */,
+				17DC508A25534B6F00C4A31B /* Scenes */,
 				17DC506625532F1500C4A31B /* Resources */,
 			);
 			path = CountriesQL;
@@ -195,6 +198,22 @@
 				17DC507A25533D1100C4A31B /* BaseCoordinator.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		17DC508A25534B6F00C4A31B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				17DC508B25534B7F00C4A31B /* ContinentList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		17DC508B25534B7F00C4A31B /* ContinentList */ = {
+			isa = PBXGroup;
+			children = (
+				17DC508C25534B9C00C4A31B /* ContinentListService.swift */,
+			);
+			path = ContinentList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +380,7 @@
 				171FAABF25525C740015C67F /* API.swift in Sources */,
 				171FAAC825525D9C0015C67F /* Network.swift in Sources */,
 				1758AAF2255256260055280E /* SceneDelegate.swift in Sources */,
+				17DC508D25534B9C00C4A31B /* ContinentListService.swift in Sources */,
 				17DC508025533FD100C4A31B /* AppCoordinator.swift in Sources */,
 				17DC507B25533D1100C4A31B /* BaseCoordinator.swift in Sources */,
 				17DC5073255337AC00C4A31B /* AppRouter.swift in Sources */,
