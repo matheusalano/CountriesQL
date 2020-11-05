@@ -45,7 +45,7 @@ final class ContinentListViewModel: ContinentListViewModelProtocol {
                 self.continents = continents
             case .failure(let error):
                 self.continents = []
-                self.delegate?.showError(message: CString.Errors.generic)
+                self.delegate?.showError(message: error.readableMessage)
             }
             
             self.delegate?.setLoading(false)

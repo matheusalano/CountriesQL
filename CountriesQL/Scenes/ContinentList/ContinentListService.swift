@@ -4,7 +4,7 @@ import Apollo
 protocol ContinentListServiceProtocol {
     typealias Continent = ContinentListQuery.Data.Continent
     
-    func getContinents(completion: @escaping ((Result<[Continent], Error>) -> Void))
+    func getContinents(completion: @escaping ((Result<[Continent], NetworkError>) -> Void))
 }
 
 final class ContinentListService: ContinentListServiceProtocol {
@@ -14,18 +14,22 @@ final class ContinentListService: ContinentListServiceProtocol {
         self.client = client
     }
 
-    func getContinents(completion: @escaping ((Result<[Continent], Error>) -> Void)) {
+    func getContinents(completion: @escaping ((Result<[Continent], NetworkError>) -> Void)) {
         client.fetch(query: ContinentListQuery()) { result in
             switch result {
             case .success(let graphQLResult):
                 guard let continents = graphQLResult.data?.continents else {
-                    completion(.failure(NSError()))
+                    completion(.failure(.generic))
                     return
                 }
                 
                 completion(.success(continents))
             case .failure(let error):
-                completion(.failure(error))
+                guard let urlError = error as? URLSessionClient.URLSessionClientError else {
+                    completion(.failure(.generic))
+                    return
+                }
+                completion(.failure(NetworkError(urlError: urlError)))
             }
         }
     }
