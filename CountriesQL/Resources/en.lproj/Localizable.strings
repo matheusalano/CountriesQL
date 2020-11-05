@@ -1,0 +1,5 @@
+"errors_generic" = "Oops! Something went wrong!";
+"errors_no_connection" = "The Internet connection appears to be offline.";
+
+"general_loading" = "LOADING";
+"general_try_again" = "Try again";
