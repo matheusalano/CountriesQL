@@ -1,6 +1,16 @@
 import Foundation
 
 struct CString {
+    struct Scenes {
+        struct ContinentList {
+            static let title = String.localized(by: "scenes_continent_list_title")
+
+            private init() {}
+        }
+
+        private init() {}
+    }
+    
     struct Errors {
         static let generic = String.localized(by: "errors_generic")
         static let noConnection = String.localized(by: "errors_no_connection")

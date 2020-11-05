@@ -12,7 +12,7 @@ class BaseCoordinator {
         self.router = router
     }
 
-    func start() {
+    func start(onFinish: (() -> ())? = nil) {
         fatalError("Children should implement `start`.")
     }
     

@@ -43,11 +43,13 @@ final class ContinentListViewModel: ContinentListViewModelProtocol {
             switch result {
             case .success(let continents):
                 self.continents = continents
-                self.delegate?.setLoading(false)
-                self.delegate?.reloadTable()
             case .failure(let error):
-                self.delegate?.showError(message: error.localizedDescription)
+                self.continents = []
+                self.delegate?.showError(message: CString.Errors.generic)
             }
+            
+            self.delegate?.setLoading(false)
+            self.delegate?.reloadTable()
         }
     }
     

@@ -23,6 +23,11 @@
 		175957982554383F003559E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1759579A2554383F003559E6 /* Localizable.strings */; };
 		175957A0255439B0003559E6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759579F255439B0003559E6 /* String+Localized.swift */; };
 		175957A5255439C4003559E6 /* CString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175957A4255439C4003559E6 /* CString.swift */; };
+		175957AD25543BD1003559E6 /* ContinentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175957AC25543BD1003559E6 /* ContinentListView.swift */; };
+		175957B225543CBC003559E6 /* ContinentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175957B125543CBC003559E6 /* ContinentListViewController.swift */; };
+		175957B72554773B003559E6 /* ContinentListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175957B62554773B003559E6 /* ContinentListCoordinator.swift */; };
+		175957BF2554814B003559E6 /* CErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175957BE2554814B003559E6 /* CErrorView.swift */; };
+		175957C8255481B0003559E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 175957C7255481B0003559E6 /* SnapKit */; };
 		17DC5073255337AC00C4A31B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC5072255337AC00C4A31B /* AppRouter.swift */; };
 		17DC507B25533D1100C4A31B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC507A25533D1100C4A31B /* BaseCoordinator.swift */; };
 		17DC508025533FD100C4A31B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC507F25533FD100C4A31B /* AppCoordinator.swift */; };
@@ -68,6 +73,10 @@
 		175957992554383F003559E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1759579F255439B0003559E6 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		175957A4255439C4003559E6 /* CString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CString.swift; sourceTree = "<group>"; };
+		175957AC25543BD1003559E6 /* ContinentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListView.swift; sourceTree = "<group>"; };
+		175957B125543CBC003559E6 /* ContinentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListViewController.swift; sourceTree = "<group>"; };
+		175957B62554773B003559E6 /* ContinentListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListCoordinator.swift; sourceTree = "<group>"; };
+		175957BE2554814B003559E6 /* CErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CErrorView.swift; sourceTree = "<group>"; };
 		17DC5072255337AC00C4A31B /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		17DC507A25533D1100C4A31B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		17DC507F25533FD100C4A31B /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -84,6 +93,7 @@
 				171FAAA6255257100015C67F /* Apollo in Frameworks */,
 				171FAAA4255257100015C67F /* ApolloWebSocket in Frameworks */,
 				171FAAA8255257100015C67F /* ApolloCodegenLib in Frameworks */,
+				175957C8255481B0003559E6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +226,7 @@
 		17DC5069255336CB00C4A31B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				175957BE2554814B003559E6 /* CErrorView.swift */,
 				17DC507A25533D1100C4A31B /* BaseCoordinator.swift */,
 				1759578E255430B2003559E6 /* BaseViewController.swift */,
 			);
@@ -233,6 +244,9 @@
 		17DC508B25534B7F00C4A31B /* ContinentList */ = {
 			isa = PBXGroup;
 			children = (
+				175957B62554773B003559E6 /* ContinentListCoordinator.swift */,
+				175957AC25543BD1003559E6 /* ContinentListView.swift */,
+				175957B125543CBC003559E6 /* ContinentListViewController.swift */,
 				17DC5097255367D400C4A31B /* ContinentListViewModel.swift */,
 				17DC508C25534B9C00C4A31B /* ContinentListService.swift */,
 			);
@@ -261,6 +275,7 @@
 				171FAAA3255257100015C67F /* ApolloWebSocket */,
 				171FAAA5255257100015C67F /* Apollo */,
 				171FAAA7255257100015C67F /* ApolloCodegenLib */,
+				175957C7255481B0003559E6 /* SnapKit */,
 			);
 			productName = CountriesQL;
 			productReference = 1758AAEC255256260055280E /* CountriesQL.app */;
@@ -335,6 +350,7 @@
 			mainGroup = 1758AAE3255256260055280E;
 			packageReferences = (
 				171FAAA0255257100015C67F /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				175957C6255481B0003559E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 1758AAED255256260055280E /* Products */;
 			projectDirPath = "";
@@ -400,9 +416,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175957B72554773B003559E6 /* ContinentListCoordinator.swift in Sources */,
 				1758AAF0255256260055280E /* AppDelegate.swift in Sources */,
+				175957B225543CBC003559E6 /* ContinentListViewController.swift in Sources */,
 				171FAABF25525C740015C67F /* API.swift in Sources */,
 				171FAAC825525D9C0015C67F /* Network.swift in Sources */,
+				175957AD25543BD1003559E6 /* ContinentListView.swift in Sources */,
 				1758AAF2255256260055280E /* SceneDelegate.swift in Sources */,
 				17DC5098255367D400C4A31B /* ContinentListViewModel.swift in Sources */,
 				1759578F255430B2003559E6 /* BaseViewController.swift in Sources */,
@@ -412,6 +431,7 @@
 				175957A0255439B0003559E6 /* String+Localized.swift in Sources */,
 				175957A5255439C4003559E6 /* CString.swift in Sources */,
 				17DC5073255337AC00C4A31B /* AppRouter.swift in Sources */,
+				175957BF2554814B003559E6 /* CErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +774,14 @@
 				minimumVersion = 0.36.0;
 			};
 		};
+		175957C6255481B0003559E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -776,6 +804,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 171FAAA0255257100015C67F /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloCodegenLib;
+		};
+		175957C7255481B0003559E6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 175957C6255481B0003559E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
