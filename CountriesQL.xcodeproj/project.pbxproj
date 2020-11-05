@@ -19,10 +19,12 @@
 		1758AAFC255256270055280E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1758AAFA255256270055280E /* LaunchScreen.storyboard */; };
 		1758AB07255256270055280E /* CountriesQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758AB06255256270055280E /* CountriesQLTests.swift */; };
 		1758AB12255256270055280E /* CountriesQLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758AB11255256270055280E /* CountriesQLUITests.swift */; };
+		1759578F255430B2003559E6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759578E255430B2003559E6 /* BaseViewController.swift */; };
 		17DC5073255337AC00C4A31B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC5072255337AC00C4A31B /* AppRouter.swift */; };
 		17DC507B25533D1100C4A31B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC507A25533D1100C4A31B /* BaseCoordinator.swift */; };
 		17DC508025533FD100C4A31B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC507F25533FD100C4A31B /* AppCoordinator.swift */; };
 		17DC508D25534B9C00C4A31B /* ContinentListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC508C25534B9C00C4A31B /* ContinentListService.swift */; };
+		17DC5098255367D400C4A31B /* ContinentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC5097255367D400C4A31B /* ContinentListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +61,12 @@
 		1758AB0D255256270055280E /* CountriesQLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesQLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1758AB11255256270055280E /* CountriesQLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesQLUITests.swift; sourceTree = "<group>"; };
 		1758AB13255256270055280E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1759578E255430B2003559E6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		17DC5072255337AC00C4A31B /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		17DC507A25533D1100C4A31B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		17DC507F25533FD100C4A31B /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		17DC508C25534B9C00C4A31B /* ContinentListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListService.swift; sourceTree = "<group>"; };
+		17DC5097255367D400C4A31B /* ContinentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				17DC507A25533D1100C4A31B /* BaseCoordinator.swift */,
+				1759578E255430B2003559E6 /* BaseViewController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 		17DC508B25534B7F00C4A31B /* ContinentList */ = {
 			isa = PBXGroup;
 			children = (
+				17DC5097255367D400C4A31B /* ContinentListViewModel.swift */,
 				17DC508C25534B9C00C4A31B /* ContinentListService.swift */,
 			);
 			path = ContinentList;
@@ -380,6 +386,8 @@
 				171FAABF25525C740015C67F /* API.swift in Sources */,
 				171FAAC825525D9C0015C67F /* Network.swift in Sources */,
 				1758AAF2255256260055280E /* SceneDelegate.swift in Sources */,
+				17DC5098255367D400C4A31B /* ContinentListViewModel.swift in Sources */,
+				1759578F255430B2003559E6 /* BaseViewController.swift in Sources */,
 				17DC508D25534B9C00C4A31B /* ContinentListService.swift in Sources */,
 				17DC508025533FD100C4A31B /* AppCoordinator.swift in Sources */,
 				17DC507B25533D1100C4A31B /* BaseCoordinator.swift in Sources */,
