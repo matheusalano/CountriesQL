@@ -94,7 +94,7 @@ private final class CoordinatorDelegateMock: ContinentListCoordinatorDelegate {
     
     var startCountryCalled: [String] = []
     
-    func startCountryListScene(continentID: String) {
-        startCountryCalled.append(continentID)
+    func startCountryListScene(continent: ContinentListQuery.Data.Continent) {
+        startCountryCalled.append(continent.code)
     }
 }

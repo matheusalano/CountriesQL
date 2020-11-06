@@ -14,6 +14,9 @@
 		17008BBF2555CE5800A3646A /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BBE2555CE5800A3646A /* CountryListViewController.swift */; };
 		17008BC52555D17900A3646A /* CountryListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BC42555D17900A3646A /* CountryListCoordinator.swift */; };
 		17008BCB2555D37B00A3646A /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BCA2555D37B00A3646A /* String+Image.swift */; };
+		17008BE32555DC8F00A3646A /* ContinentListCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BE22555DC8F00A3646A /* ContinentListCoordinatorTests.swift */; };
+		17008BE92555DD4F00A3646A /* BaseCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BE82555DD4F00A3646A /* BaseCoordinatorMock.swift */; };
+		17008BEF2555DD7C00A3646A /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BEE2555DD7C00A3646A /* RouterMock.swift */; };
 		171ABB5F2554E1C5003A10A6 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 171ABB5E2554E1C5003A10A6 /* Apollo */; };
 		171ABB662554E27F003A10A6 /* ContinentListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */; };
 		171ABB772554E510003A10A6 /* ContinentListDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ABB762554E510003A10A6 /* ContinentListDummies.swift */; };
@@ -58,6 +61,9 @@
 		17008BBE2555CE5800A3646A /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
 		17008BC42555D17900A3646A /* CountryListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCoordinator.swift; sourceTree = "<group>"; };
 		17008BCA2555D37B00A3646A /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		17008BE22555DC8F00A3646A /* ContinentListCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListCoordinatorTests.swift; sourceTree = "<group>"; };
+		17008BE82555DD4F00A3646A /* BaseCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorMock.swift; sourceTree = "<group>"; };
+		17008BEE2555DD7C00A3646A /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
 		171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListServiceTests.swift; sourceTree = "<group>"; };
 		171ABB762554E510003A10A6 /* ContinentListDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListDummies.swift; sourceTree = "<group>"; };
 		171FAAB925525BDE0015C67F /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
@@ -131,9 +137,10 @@
 		171ABB642554E252003A10A6 /* ContinentList */ = {
 			isa = PBXGroup;
 			children = (
+				17008BE22555DC8F00A3646A /* ContinentListCoordinatorTests.swift */,
+				17008BAB2555B31100A3646A /* ContinentListViewModelTests.swift */,
 				171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */,
 				171ABB762554E510003A10A6 /* ContinentListDummies.swift */,
-				17008BAB2555B31100A3646A /* ContinentListViewModelTests.swift */,
 			);
 			path = ContinentList;
 			sourceTree = "<group>";
@@ -210,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				175957CD2554B4D2003559E6 /* NetworkTransportMock.swift */,
+				17008BE82555DD4F00A3646A /* BaseCoordinatorMock.swift */,
+				17008BEE2555DD7C00A3646A /* RouterMock.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -436,6 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17008BEF2555DD7C00A3646A /* RouterMock.swift in Sources */,
+				17008BE32555DC8F00A3646A /* ContinentListCoordinatorTests.swift in Sources */,
+				17008BE92555DD4F00A3646A /* BaseCoordinatorMock.swift in Sources */,
 				171ABB662554E27F003A10A6 /* ContinentListServiceTests.swift in Sources */,
 				171ABB772554E510003A10A6 /* ContinentListDummies.swift in Sources */,
 				175957CE2554B4D2003559E6 /* NetworkTransportMock.swift in Sources */,
