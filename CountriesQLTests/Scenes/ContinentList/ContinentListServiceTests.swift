@@ -5,9 +5,9 @@ import Apollo
 
 final class ContinentListServiceTests: XCTestCase {
     
-    var networkMock: NetworkTransportMock<ContinentListQuery.Data>!
-    var client: ApolloClient!
-    var sut: ContinentListService!
+    private var networkMock: NetworkTransportMock<ContinentListQuery.Data>!
+    private var client: ApolloClient!
+    private var sut: ContinentListService!
 
     func setup(result: Result<ContinentListQuery.Data, Error>) {
         networkMock = NetworkTransportMock(result: result)

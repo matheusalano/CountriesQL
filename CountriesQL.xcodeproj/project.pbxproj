@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17008BAC2555B31100A3646A /* ContinentListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BAB2555B31100A3646A /* ContinentListViewModelTests.swift */; };
 		171ABB5F2554E1C5003A10A6 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 171ABB5E2554E1C5003A10A6 /* Apollo */; };
 		171ABB662554E27F003A10A6 /* ContinentListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */; };
 		171ABB772554E510003A10A6 /* ContinentListDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ABB762554E510003A10A6 /* ContinentListDummies.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17008BAB2555B31100A3646A /* ContinentListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListViewModelTests.swift; sourceTree = "<group>"; };
 		171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListServiceTests.swift; sourceTree = "<group>"; };
 		171ABB762554E510003A10A6 /* ContinentListDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListDummies.swift; sourceTree = "<group>"; };
 		171FAAB925525BDE0015C67F /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */,
 				171ABB762554E510003A10A6 /* ContinentListDummies.swift */,
+				17008BAB2555B31100A3646A /* ContinentListViewModelTests.swift */,
 			);
 			path = ContinentList;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				171ABB662554E27F003A10A6 /* ContinentListServiceTests.swift in Sources */,
 				171ABB772554E510003A10A6 /* ContinentListDummies.swift in Sources */,
 				175957CE2554B4D2003559E6 /* NetworkTransportMock.swift in Sources */,
+				17008BAC2555B31100A3646A /* ContinentListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
