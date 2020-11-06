@@ -81,7 +81,7 @@ extension ContinentListViewController: UITableViewDelegate, UITableViewDataSourc
         
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.text = continent.name
-        cell.detailTextLabel?.text = "\(continent.countries.count) countries"
+        cell.detailTextLabel?.text = CString.Scenes.ContinentList.countries.replacingOccurrences(of: "{c}", with: "\(continent.countries.count)")
         
         return cell
     }

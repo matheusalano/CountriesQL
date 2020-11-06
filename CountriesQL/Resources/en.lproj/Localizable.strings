@@ -1,4 +1,5 @@
-"scenes_continent_list_title" = "Continents";
+"scenes_continents_title" = "Continents";
+"scenes_continents_countries" = "{c} countries";
 
 "errors_generic" = "Oops! Something went wrong!";
 "errors_no_connection" = "The Internet connection appears to be offline.";

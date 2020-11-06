@@ -3,7 +3,8 @@ import Foundation
 struct CString {
     struct Scenes {
         struct ContinentList {
-            static let title = String.localized(by: "scenes_continent_list_title")
+            static let title = String.localized(by: "scenes_continents_title")
+            static let countries = String.localized(by: "scenes_continents_countries")
 
             private init() {}
         }
