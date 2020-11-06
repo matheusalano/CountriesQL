@@ -2,7 +2,7 @@ import Foundation
 
 final class ContinentListCoordinator: BaseCoordinator {
     
-    let viewModel: ContinentListViewModelProtocol
+    private var viewModel: ContinentListViewModelProtocol
     
     override init(router: AppRouterProtocol) {
         viewModel = ContinentListViewModel()
@@ -15,8 +15,20 @@ final class ContinentListCoordinator: BaseCoordinator {
     }
     
     override func start(onFinish: (() -> ())? = nil) {
+        viewModel.coordinatorDelegate = self
         let viewController = ContinentListViewController(viewModel: viewModel)
         
         router.push(viewController, isAnimated: true, onNavigateBack: onFinish)
+    }
+}
+
+extension ContinentListCoordinator: ContinentListCoordinatorDelegate {
+    func startCountryListScene(continent: ContinentListQuery.Data.Continent) {
+        let countryCoordinator = CountryListCoordinator(router: router, continent: continent)
+        store(coordinator: countryCoordinator)
+        
+        countryCoordinator.start { [weak self] in
+            self?.free(coordinator: countryCoordinator)
+        }
     }
 }

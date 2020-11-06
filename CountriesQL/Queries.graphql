@@ -1,5 +1,7 @@
-query CountryList {
-  countries {
+query CountryList($continentID: String) {
+  countries(filter: {
+    continent: { eq: $continentID }
+  }) {
     code
     name
     native

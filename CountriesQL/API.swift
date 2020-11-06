@@ -8,8 +8,8 @@ public final class CountryListQuery: GraphQLQuery {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    query CountryList {
-      countries {
+    query CountryList($continentID: String) {
+      countries(filter: {continent: {eq: $continentID}}) {
         __typename
         code
         name
@@ -21,7 +21,14 @@ public final class CountryListQuery: GraphQLQuery {
 
   public let operationName: String = "CountryList"
 
-  public init() {
+  public var continentID: String?
+
+  public init(continentID: String? = nil) {
+    self.continentID = continentID
+  }
+
+  public var variables: GraphQLMap? {
+    return ["continentID": continentID]
   }
 
   public struct Data: GraphQLSelectionSet {
@@ -29,7 +36,7 @@ public final class CountryListQuery: GraphQLQuery {
 
     public static var selections: [GraphQLSelection] {
       return [
-        GraphQLField("countries", type: .nonNull(.list(.nonNull(.object(Country.selections))))),
+        GraphQLField("countries", arguments: ["filter": ["continent": ["eq": GraphQLVariable("continentID")]]], type: .nonNull(.list(.nonNull(.object(Country.selections))))),
       ]
     }
 

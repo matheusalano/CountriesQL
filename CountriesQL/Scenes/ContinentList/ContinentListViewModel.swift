@@ -7,7 +7,7 @@ protocol ContinentListViewModelDelegate: class {
 }
 
 protocol ContinentListCoordinatorDelegate: class {
-    func startCountryListScene(continentID: String)
+    func startCountryListScene(continent: ContinentListQuery.Data.Continent)
 }
 
 protocol ContinentListViewModelProtocol {
@@ -54,6 +54,6 @@ final class ContinentListViewModel: ContinentListViewModelProtocol {
     }
     
     func rowSelected(_ indexPath: IndexPath) {
-        coordinatorDelegate?.startCountryListScene(continentID: continents[indexPath.row].code)
+        coordinatorDelegate?.startCountryListScene(continent: continents[indexPath.row])
     }
 }
