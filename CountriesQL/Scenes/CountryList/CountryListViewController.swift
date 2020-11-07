@@ -39,6 +39,7 @@ final class CountryListViewController: BaseViewController<CountryListView> {
     }
     
     private func setupTableView() {
+        customView.tableView.refreshControl = customView.refreshControl
         customView.tableView.allowsSelection = false
         customView.tableView.dataSource = self
         customView.refreshControl.addAction(UIAction(handler: { [weak self] _ in

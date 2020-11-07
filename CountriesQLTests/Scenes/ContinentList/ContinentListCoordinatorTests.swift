@@ -1,10 +1,3 @@
-//
-//  ContinentListCoordinatorTests.swift
-//  CountriesQLTests
-//
-//  Created by Matheus Alano on 06/11/20.
-//
-
 import XCTest
 
 @testable import CountriesQL

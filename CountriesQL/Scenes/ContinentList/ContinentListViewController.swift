@@ -39,6 +39,7 @@ final class ContinentListViewController: BaseViewController<ContinentListView> {
     }
     
     private func setupTableView() {
+        customView.tableView.refreshControl = customView.refreshControl
         customView.tableView.dataSource = self
         customView.tableView.delegate = self
         customView.refreshControl.addAction(UIAction(handler: { [weak self] _ in

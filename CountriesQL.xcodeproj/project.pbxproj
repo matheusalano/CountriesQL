@@ -17,6 +17,10 @@
 		17008BE32555DC8F00A3646A /* ContinentListCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BE22555DC8F00A3646A /* ContinentListCoordinatorTests.swift */; };
 		17008BE92555DD4F00A3646A /* BaseCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BE82555DD4F00A3646A /* BaseCoordinatorMock.swift */; };
 		17008BEF2555DD7C00A3646A /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BEE2555DD7C00A3646A /* RouterMock.swift */; };
+		17008BF62556164B00A3646A /* CountryListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BF52556164B00A3646A /* CountryListServiceTests.swift */; };
+		17008BFA2556167900A3646A /* CountryListDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BF92556167900A3646A /* CountryListDummies.swift */; };
+		17008BFE25563C3100A3646A /* CountryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008BFD25563C3100A3646A /* CountryListViewModelTests.swift */; };
+		17008C0425563D5C00A3646A /* CountryListCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17008C0325563D5C00A3646A /* CountryListCoordinatorTests.swift */; };
 		171ABB5F2554E1C5003A10A6 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 171ABB5E2554E1C5003A10A6 /* Apollo */; };
 		171ABB662554E27F003A10A6 /* ContinentListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */; };
 		171ABB772554E510003A10A6 /* ContinentListDummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ABB762554E510003A10A6 /* ContinentListDummies.swift */; };
@@ -64,6 +68,10 @@
 		17008BE22555DC8F00A3646A /* ContinentListCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListCoordinatorTests.swift; sourceTree = "<group>"; };
 		17008BE82555DD4F00A3646A /* BaseCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorMock.swift; sourceTree = "<group>"; };
 		17008BEE2555DD7C00A3646A /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
+		17008BF52556164B00A3646A /* CountryListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListServiceTests.swift; sourceTree = "<group>"; };
+		17008BF92556167900A3646A /* CountryListDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListDummies.swift; sourceTree = "<group>"; };
+		17008BFD25563C3100A3646A /* CountryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModelTests.swift; sourceTree = "<group>"; };
+		17008C0325563D5C00A3646A /* CountryListCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCoordinatorTests.swift; sourceTree = "<group>"; };
 		171ABB652554E27F003A10A6 /* ContinentListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListServiceTests.swift; sourceTree = "<group>"; };
 		171ABB762554E510003A10A6 /* ContinentListDummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListDummies.swift; sourceTree = "<group>"; };
 		171FAAB925525BDE0015C67F /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
@@ -126,9 +134,21 @@
 			path = CountryList;
 			sourceTree = "<group>";
 		};
+		17008BF2255615FA00A3646A /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				17008C0325563D5C00A3646A /* CountryListCoordinatorTests.swift */,
+				17008BFD25563C3100A3646A /* CountryListViewModelTests.swift */,
+				17008BF52556164B00A3646A /* CountryListServiceTests.swift */,
+				17008BF92556167900A3646A /* CountryListDummies.swift */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
 		171ABB632554E241003A10A6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				17008BF2255615FA00A3646A /* CountryList */,
 				171ABB642554E252003A10A6 /* ContinentList */,
 			);
 			path = Scenes;
@@ -445,10 +465,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17008BFA2556167900A3646A /* CountryListDummies.swift in Sources */,
+				17008C0425563D5C00A3646A /* CountryListCoordinatorTests.swift in Sources */,
 				17008BEF2555DD7C00A3646A /* RouterMock.swift in Sources */,
 				17008BE32555DC8F00A3646A /* ContinentListCoordinatorTests.swift in Sources */,
+				17008BFE25563C3100A3646A /* CountryListViewModelTests.swift in Sources */,
 				17008BE92555DD4F00A3646A /* BaseCoordinatorMock.swift in Sources */,
 				171ABB662554E27F003A10A6 /* ContinentListServiceTests.swift in Sources */,
+				17008BF62556164B00A3646A /* CountryListServiceTests.swift in Sources */,
 				171ABB772554E510003A10A6 /* ContinentListDummies.swift in Sources */,
 				175957CE2554B4D2003559E6 /* NetworkTransportMock.swift in Sources */,
 				17008BAC2555B31100A3646A /* ContinentListViewModelTests.swift in Sources */,

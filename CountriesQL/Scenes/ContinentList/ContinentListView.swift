@@ -28,7 +28,6 @@ final class ContinentListView: UIView {
     //MARK: Private functions
 
     private func addSubviews() {
-        tableView.refreshControl = refreshControl
         addSubview(tableView)
     }
 
